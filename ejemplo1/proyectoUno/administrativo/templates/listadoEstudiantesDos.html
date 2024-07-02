@@ -1,4 +1,10 @@
-<h2>Listado de Estudiantes</h3>
+{% extends "master.html" %}
+
+{% block title %}
+Listado de estudiantes
+{% endblock %}
+
+{% block content %}
 <h3>Número de estudiantes {{ numero_estudiantes }}</h3>
 
 {% for e in estudiantes %}
@@ -13,3 +19,5 @@
   </ul>
   <br/>
 {% endfor %}
+{% endblock %}
+
